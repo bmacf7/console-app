@@ -1,13 +1,9 @@
-const base = 5;
-let output = "";
+const { createFile } = require("./helpers/multiplicar");
 
 console.clear();
-console.log("===================");
-console.log(`   Tabla del ${base}:  `);
-console.log("===================");
 
-for (let i = 1; i <= 10; i++) {
-  output += `${base} x ${i} = ${base * i}\n`;
-}
+const base = 5;
 
-console.log(output);
+createFile(base)
+  .then((fileName) => console.log(fileName + " creado correctamente!"))
+  .catch((err) => console.log(err));
