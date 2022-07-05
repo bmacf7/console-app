@@ -1,18 +1,19 @@
 const fs = require("fs");
 
-const createFile = async (base = 5) => {
+const createFile = async (base = 5, listar) => {
   try {
     let output = "";
-
-    console.log("===================");
-    console.log(`   Tabla del ${base}:  `);
-    console.log("===================");
 
     for (let i = 1; i <= 10; i++) {
       output += `${base} x ${i} = ${base * i}\n`;
     }
 
-    console.log(output);
+    if (listar) {
+      console.log("===================");
+      console.log(`   Tabla del ${base}:  `);
+      console.log("===================");
+      console.log(output);
+    }
 
     let fileName = `tabla-${base}.txt`;
 
