@@ -1,1 +1,5 @@
+# Ignore txt files created by running the app.
 *.txt
+
+# Ignore node_modules folder
+node_modules/
