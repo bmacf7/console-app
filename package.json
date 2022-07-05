@@ -1,0 +1,26 @@
+{
+  "name": "console-app",
+  "version": "1.0.0",
+  "description": "CLI para calcular la tabla de multiplicar basada en los parametros recibidos.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bmacf7/console-app.git"
+  },
+  "author": "Byron Machin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bmacf7/console-app/issues"
+  },
+  "homepage": "https://github.com/bmacf7/console-app#readme",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "yargs": "^17.5.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.18"
+  }
+}
