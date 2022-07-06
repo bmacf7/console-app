@@ -1,14 +1,15 @@
 const fs = require("fs");
+const colors = require("colors");
 
-const createFile = async (base = 5, listar) => {
+const createFile = async (base = 5, mostrar, limite = 10) => {
   try {
     let output = "";
 
-    for (let i = 1; i <= 10; i++) {
+    for (let i = 1; i <= limite; i++) {
       output += `${base} x ${i} = ${base * i}\n`;
     }
 
-    if (listar) {
+    if (mostrar) {
       console.log("===================");
       console.log(`   Tabla del ${base}:  `);
       console.log("===================");
@@ -21,7 +22,7 @@ const createFile = async (base = 5, listar) => {
 
     return fileName;
   } catch (err) {
-    throw err;
+    throw err.red;
   }
 };
 
